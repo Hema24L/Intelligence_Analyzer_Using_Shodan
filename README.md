@@ -19,42 +19,44 @@ No scanning, exploitation, or active probing is performed.
 ---
 ## 🧠 What This Tool Is (and Is Not)
 ✅ What it does
-- Uses public & passive data sources
-- Works with Shodan free tier
-- Helps analysts prioritize risk
-- Designed for OSINT / CTI / SOC learning
+  - Uses public & passive data sources
+  - Works with Shodan free tier
+  - Helps analysts prioritize risk
+  - Designed for OSINT / CTI / SOC learning
+
 ❌ What it does NOT do
-- No vulnerability exploitation
-- No port scanning
-- No confirmation of malicious activity
-- No guarantee of complete Shodan data (free tier limitation)
+  - No vulnerability exploitation
+  - No port scanning
+  - No confirmation of malicious activity
+  - No guarantee of complete Shodan data (free tier limitation)
 
 ---
 ## 📦 Requirements
-- Python 3.8+
-- Shodan API Key(Free Tier)
-- Standard libraries used `socket`, `json`, `sys`, `ipaddress`, `datetime`.
-  ```bash
-  pip install shodan python-whois requests
-  ```
+  - Python 3.8+
+  - Shodan API Key(Free Tier)
+  - Standard libraries used `socket`, `json`, `sys`, `ipaddress`, `datetime`.
+
+    ```bash
+    pip install shodan python-whois requests
+    ```
 
 ---
 ## 🔑 Shodan API Key Setup(API Configuration)
 Create a .env file in the project directory:
-```bash
-SHODAN_API_KEY="YOUR_SHODAN_API_KEY"
-```
+  ```bash
+  SHODAN_API_KEY="YOUR_SHODAN_API_KEY"
+  ```
 
 ---
 ## 🚀 Usage
 ### Analyze an IP address
-```bash
-python shodan_passive_intel.py 8.8.8.8
-```
+  ```bash
+  python shodan_passive_intel.py 8.8.8.8
+  ```
 ### Analyze a domain
-```bash
-python shodan_passive_intel.py example.com
-```
+  ```bash
+  python shodan_passive_intel.py example.com
+  ```
 
 ---
 ## 📄 Output
@@ -138,12 +140,12 @@ Checks organization string for known CDN names (e.g., Cloudflare)
 ---
 ## 🧪 Certificate Transparency (CT) Logs
 If a domain **does not resolve via DNS**, the tool:
-- Queries **crt.sh**
-- Extracts historical subdomains from TLS certificates
+  - Queries **crt.sh**
+  - Extracts historical subdomains from TLS certificates
 This helps identify:
-- Dormant infrastructure
-- Historical exposure
-- Typosquatted or abandoned assets
+  - Dormant infrastructure
+  - Historical exposure
+  - Typosquatted or abandoned assets
 
 ---
 ## ⚠️ Important Limitations
