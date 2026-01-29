@@ -116,6 +116,7 @@ Create a .env file in the project directory:
 - LOW (15–39)
 - MEDIUM (40–74)
 - HIGH (75–100)
+
 ⚠️ Severity ≠ confirmed malicious activity
 
 ---
