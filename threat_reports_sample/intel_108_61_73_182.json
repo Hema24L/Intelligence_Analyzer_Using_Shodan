@@ -1,0 +1,27 @@
+{
+    "target": "108.61.73.182",
+    "timestamp": "2026-01-29T14:06:51.191878",
+    "dns_resolves": true,
+    "resolved_ips": [
+        "108.61.73.182"
+    ],
+    "ct_subdomains": [],
+    "domain_age": null,
+    "ip_analysis": [
+        {
+            "ip": "108.61.73.182",
+            "organization": "Vultr Holdings, LLC",
+            "country": "United States",
+            "ports": [
+                80,
+                443
+            ],
+            "risky_ports": [],
+            "cdn_protected": false
+        }
+    ],
+    "cdn_protected": false,
+    "risky_ports": [],
+    "risk_score": 20,
+    "severity": "LOW"
+}
